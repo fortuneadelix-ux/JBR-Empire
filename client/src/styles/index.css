@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  --bg-primary-color: rgba(22, 22, 24);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  --color: rgba(255, 255, 255, 0.7);
+  background-color:rgba(14, 21, 36);
+  /* SideBar */
+  --sb-bgcolor: rgba(28, 28, 32);
+  color: var(--color);
+  --border: 1px solid rgba(255, 255, 255, 0.1);
+}

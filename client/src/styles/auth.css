@@ -1,0 +1,270 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(14, 21, 36);
+    background: linear-gradient(rgba(26, 36, 64) 0%, rgba(14, 21, 36) 50%, rgba(15, 33, 49) 100%);
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 2.4%;
+    padding-top: 2.4%;
+}
+
+.presentationCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    width: 45%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: linear-gradient(rgba(106, 131, 234) 0%, rgba(75, 151, 215) 50%, rgba(53, 163, 202) 100%);
+    padding-bottom: 3.5%;
+    padding-top: 5%;
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+    box-sizing: border-box;
+    color: white;
+    gap: 1rem;
+}
+
+
+.content{
+    display: flex;
+    width: 95%;
+    height: 100%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+
+
+}
+
+.connexion{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border: 1px solid rgba(43, 58, 80, 0.9);
+    flex: 1;
+    background-color: rgb(24, 34, 53);;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 3.5%;
+    padding-top: 3.5%;
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+    box-sizing: border-box;
+}
+
+.connexionContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgba(43, 58, 80, 0.9);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 10%;
+    color: rgb(255, 255, 255);
+    gap: 15px;
+    padding-top: 8%;
+    box-sizing: border-box;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.loginForm input{
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(22, 30, 44);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.remember input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.remember span {
+    line-height: 16px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0;
+  color: #8a94a6; /* Couleur du texte */
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Génère les deux traits dynamiquement de chaque côté */
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #1e293b; /* Couleur de la ligne sombre */
+}
+
+.divider::before {
+  margin-right: 12px;
+}
+
+.divider::after {
+  margin-left: 12px;
+}
+
+
+.connectBut,
+.loginLinks button{
+    background-color: rgba(109, 136, 255);
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.connectBut{
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.loginLinks{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.loginLinks button{
+    height: 100%;
+    width: 47%;
+    outline: none;
+
+}
+
+.connexionContent a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(109, 136, 255);
+}
+
+
+
+
+
+
+
+
+/* .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    width: 35%;
+    min-height: 45%;
+    border-radius: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgb(32, 44, 72);
+    color: rgba(255, 255, 255, 0.7);
+    gap: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.inputs input{
+    height: 40%;
+    width: 75%;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 10px;
+    outline: none;
+    padding-right: 20px;
+}
+
+.remind{
+    display: flex;
+    justify-content: end;
+    width: 75%;
+}
+
+.connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 10%;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(33, 66, 142);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.switch a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.switch a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.error{
+    color: red;
+} */
